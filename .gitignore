@@ -1,0 +1,5 @@
+*.kpf
+*.pyc
+*.egg-info/
+ve/
+dist/
