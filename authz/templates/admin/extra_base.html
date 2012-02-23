@@ -1,0 +1,30 @@
+{% extends "admin/base.html" %}
+
+{% block extra_head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+{% endblock %}
+
+{% block header %}<h1>MediaCenter Authz</h1>{% endblock header %}
+
+{% block left_nav  %}
+  <div id="left_nav">
+    <h4>APIs Management</h4>
+    <ul>
+      <li>
+        <a href="{{ url_for('.list', model_name='Consumer', page=1)}}">Consumers</a>
+      </li>
+      <li>
+        <a href="{{ url_for('.list', model_name='Policy', page=1)}}">Policies</a>
+      </li>
+    </ul>
+    <h4>Administration</h4>
+    <ul>
+      <li>
+        <a href="{{ url_for('.list', model_name='User', page=1)}}">Users</a>
+      </li>
+      <li>
+        <a href="{{ url_for('.logout')}}">Logout</a>
+      </li>
+    </ul>
+  </div>
+{% endblock left_nav %}

@@ -1,0 +1,61 @@
+body.login {
+    font-size: 16px;
+    font-family: 'Georgia', serif;
+    margin: 30px;
+    padding: 0;
+    width: 600px;
+}
+
+body.login > a {
+    color: #335E79;
+}
+
+body.login > h1, h2 {
+    font-weight: normal;
+}
+
+p.flash-message,
+p.flash-info {
+    background: #335E79;
+    padding: 5px;
+    color: #FFFFFF;
+}
+
+p.flash-warning,
+p.flash-error {
+    background: #DB2727;
+    padding: 5px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+input.submit {
+    /* borrowed from jquery-ui */
+    cursor: pointer;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    border: 1px solid #cccccc;
+    outline: none;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.1) inset, 0 1px 0 rgba(255,255,255,0.2);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.1) inset, 0 1px 0 rgba(255,255,255,0.2);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1) inset, 0 1px 0 rgba(255,255,255,0.2);
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25 ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    padding: 4px 8px 4px 8px;
+}
+
+input.openid {
+    font-size: 16px;
+    font-family: 'Georgia', serif;
+    padding: 2px;
+    border: 1px solid black;
+    color: #335E79;
+    padding-left: 24px;
+    background: url(openid.png) 4px no-repeat;
+}
+
+input.readonly {
+    background-color: #EBEBE4 !important;
+}

@@ -1,0 +1,18 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd"
+    >
+<title>{% block title %}Welcome{% endblock %} | MediaCenter Authz</title>
+
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+
+<body class="{% block body_class %}public{% endblock %}">
+{% block body %}
+  {% block body_title %}<h1>Welcome to MediaCenter Authz</h1>{% endblock %}
+  {% block messages %}
+    {% for category, message in get_flashed_messages(with_categories=true) %}
+    <p class=flash-{{ category }}>{{ message }}</p>
+    {% endfor %}
+  {% endblock %}
+  {% block content %}{% endblock %}
+{% endblock %}
+</body>

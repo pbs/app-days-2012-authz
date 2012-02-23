@@ -1,0 +1,5 @@
+graft authz/static
+graft authz/templates
+prune authz/tests
+include README.rst
+include apache.wsgi

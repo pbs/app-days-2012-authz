@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block title %}Sign in{% endblock %}
+{% block body_class %}login{% endblock %}
+{% block body_title %}<h1>Please sign in using your OpenID</h1>{% endblock %}
+{% block content %}
+  <form action="" method="post">
+    {% if error %}<p class=flash-error>{{ error }}</p>{% endif %}
+    <p>
+      OpenID:
+      <input type="text" name="openid" size="30" class="openid">
+      <input type="submit" value="Sign in" class="submit">
+      <input type="hidden" name="next" value="{{ next }}">
+  </form>
+{% endblock %}
