@@ -1,5 +1,6 @@
 import time
 import oauth2 as oauth
+from urllib import quote_plus
 
 from flask import url_for, json
 
@@ -24,7 +25,7 @@ def _build_request(consumer, method, url, body=''):
         })
 
     request.sign_request(oauth.SignatureMethod_HMAC_SHA1(), consumer, None)
-    return request.to_url()
+    return quote_plus(request.to_url())
 
 
 class AuthenticateTestCase(AuthzTestCase):
