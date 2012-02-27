@@ -11,6 +11,7 @@
 import oauth2 as oauth
 from cStringIO import StringIO
 from urlparse import urlparse
+from urllib import unquote_plus
 
 from flask import Blueprint, Request, request, abort, jsonify
 
@@ -34,7 +35,7 @@ def index(url):
     If the request is authenticated the consumer details are returned as a json
     document in the body.
     """
-    original_request = _request_from_url(url, request)
+    original_request = _request_from_url(unquote_plus(url), request)
     oauth_request = oauth.Request.from_request(
         original_request.method,
         original_request.url,
