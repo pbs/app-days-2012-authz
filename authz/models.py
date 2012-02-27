@@ -68,7 +68,7 @@ class User(mongo.Document):
 
 
 class Consumer(mongo.Document):
-    """Model for MediaCenter API consumers."""
+    """Model for API consumers."""
 
     name = mongo.StringField(max_length=30)
     """:: the name of the consumer."""
@@ -106,7 +106,7 @@ class Consumer(mongo.Document):
 
 
 class Policy(mongo.Document):
-    """Model for MediaCenter API policies."""
+    """Model for API policies."""
 
     consumer_key = mongo.StringField(max_length=24)
     """:: the key of the consumer for which this policy is set."""

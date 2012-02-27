@@ -63,7 +63,7 @@ def login_view():
 
 def logout_view():
     session.pop('openid', None)
-    flash('You were successfully signed out from MediaCenter Authz')
+    flash('You were successfully signed out from Authz')
     return redirect(openid.get_next_url())
 
 
