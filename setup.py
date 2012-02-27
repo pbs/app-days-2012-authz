@@ -25,7 +25,7 @@ dependencies = (
 
     # OAuth dependencies
     'httplib2==0.7.2',
-    'oauth2==1.5.211',
+    'oauth2==1.5.166',
 
     # Other dependencies
     'wtforms==0.6.3',
@@ -33,7 +33,7 @@ dependencies = (
 
 
 dependency_links = (
-#    'https://github.com/zyegfryed/python-oauth2/tarball/master#egg=oauth2-1.5.166',
+    'https://github.com/zyegfryed/python-oauth2/tarball/master#egg=oauth2-1.5.166',
 )
 
 
