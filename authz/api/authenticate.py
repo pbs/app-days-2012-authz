@@ -27,7 +27,7 @@ oauth_server = oauth.Server(
 
 
 @authenticate_endpoints.route(
-    '/<path:url>/',
+    '/<path:url>',
     methods=["GET", "POST", "PUT", "DELETE"])
 def index(url):
     """Verify 2-legged oauth request using the specified URL.
