@@ -11,7 +11,7 @@ README_PATH = os.path.join(
 """The list of dependencies for this package."""
 dependencies = (
     # Framework dependencies
-    'Flask==0.8.0',
+    'Flask==1.0',
     'Flask-Admin==0.3.0',
 
     # MongoDB dependencies
