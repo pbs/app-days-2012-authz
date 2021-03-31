@@ -24,7 +24,7 @@ dependencies = (
     'Flask-OpenID==1.0.1',
 
     # OAuth dependencies
-    'httplib2==0.7.2',
+    'httplib2==0.19.0',
     'oauth2==1.5.166',
 
     # Other dependencies
