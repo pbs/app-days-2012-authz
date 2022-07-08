@@ -15,7 +15,7 @@ dependencies = (
     'Flask-Admin==0.3.0',
 
     # MongoDB dependencies
-    'PyMongo==2.1.1',
+    'PyMongo==2.5.2',
     'MongoAlchemy==0.11',
     'Flask-MongoAlchemy==0.5.3',
 
